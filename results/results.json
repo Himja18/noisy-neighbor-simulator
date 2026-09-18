@@ -1,0 +1,56 @@
+{
+  "baseline": {
+    "scenario": "baseline",
+    "wall_seconds": 8.21,
+    "good_tenants_combined": {
+      "count": 1009,
+      "timeouts_or_rejections": 0,
+      "p50_ms": 7.1,
+      "p95_ms": 31.9,
+      "p99_ms": 71.0
+    },
+    "noisy_tenant": {
+      "count": 124,
+      "timeouts_or_rejections": 0,
+      "p50_ms": 236.5,
+      "p95_ms": 343.1,
+      "p99_ms": 465.2
+    }
+  },
+  "conn_timeout": {
+    "scenario": "conn_timeout",
+    "wall_seconds": 8.21,
+    "good_tenants_combined": {
+      "count": 1404,
+      "timeouts_or_rejections": 0,
+      "p50_ms": 3.7,
+      "p95_ms": 12.1,
+      "p99_ms": 22.1
+    },
+    "noisy_tenant": {
+      "count": 67,
+      "timeouts_or_rejections": 2,
+      "p50_ms": 222.4,
+      "p95_ms": 320.7,
+      "p99_ms": "TIMEOUT"
+    }
+  },
+  "index_isolation": {
+    "scenario": "index_isolation",
+    "wall_seconds": 8.11,
+    "good_tenants_combined": {
+      "count": 803,
+      "timeouts_or_rejections": 0,
+      "p50_ms": 7.7,
+      "p95_ms": 46.3,
+      "p99_ms": 72.3
+    },
+    "noisy_tenant": {
+      "count": 104,
+      "timeouts_or_rejections": 0,
+      "p50_ms": 263.5,
+      "p95_ms": 423.9,
+      "p99_ms": 517.8
+    }
+  }
+}
